@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Play');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+Li{
+    list-style: none;
+}
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.site-content{
+    flex:1;
+}
+.done{
+    text-decoration: line-through;
+}
+
+.header__main-headline{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 90px;
+    background-color: #603D9B;
+    color:#c2DB48;
+    margin: 0;
+    text-align: center;
+    padding: 40px;
+}
+.form-todo{
+    text-align: center;
+    margin-top: 40px;
+}
+.form-todo__input{
+    width:37%;
+    height: 40px;
+    border: 3px dashed #603D9B;
+    border-radius: 28px;
+    font-family: 'Play', sans-serif;
+    font-size:18px;
+    padding-left: 10px;
+}
+.form-todo__save-button{
+    width: 12%;
+    border-radius: 27px;
+    background-color: #603D9B;
+    color: #c2DB48;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    height: 40px;
+    padding: 8px;
+    vertical-align: middle;
+}
+.container-todo{
+    text-align: center;
+    width:100%;
+    margin-top: 40px;
+}
+
+.container-todo__list-todo li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    border: 3px solid #c2DB48;
+    width: 36%;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 10px auto;
+}
+
+
+.delete-btn{
+    background-color: transparent;
+    border: none;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    padding: 10px;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color:#603D9B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer span{
+    font-size: 20px;
+    color: #c2DB48;
+    font-family: 'Play', sans-serif;
+}
+
+.footer b{
+    color:#c2DB48;
+    font:30px 'Luckiest Guy', cursive;
+}
+
+li span{
+    width: 90%;
+    word-wrap: break-word;
+    padding: 24px;
+}
+
+.header__main-headline{
+    font-size: calc(25px + (90 - 25) * (100vw - 320px) / (1200 - 320));
+}
+.container-todo__list-todo li {
+    font-size: calc(14px + (30 - 14) * (100vw - 320px) / (1200 - 320));
+}
+
+@media only screen and (max-width: 768px) {
+    .container-todo__list-todo li{
+        width: 80%;
+        margin: 10px;
+    }
+    .form-todo__save-button{
+        width: 31%;
+    }
+}
+
